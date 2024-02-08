@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+    <listeners>
+        <listener class-name="reporting.Setup"></listener>
+    </listeners>
     <test verbose="2" preserve-order="true"
           name="D:/workspace/RestAssuredFramework/src/test/java/bookStore/BookstoreTests.java">
         <classes>
             <class name="bookStore.BookstoreTests">
                 <methods>
-                    <include name="getAllActivities"/>
+                    <include name="getActivities"/>
                     <include name="postActivities"/>
                 </methods>
             </class>
